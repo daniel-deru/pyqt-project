@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>976</width>
+    <height>883</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI Black</family>
+    <pointsize>14</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>PyQt5 QCalendar</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QCalendarWidget" name="calendarWidget">
+       <property name="styleSheet">
+        <string notr="true">QCalendarWidget QToolButton{
+	height: 40px;
+	width:150px;
+	color: black;
+	font-size: 20px;
+	icon-size: 56px;
+	
+}
+
+QCalendarWidget QWidget{
+	alternate-background-color: rgb(128, 128, 128);
+}
+
+QCalendarWidget QAbstractItemView:enabled {
+	font-size: 18px;
+	color: rgb(180,180, 180);
+	background-color: black;
+	selection-background-color: rgb(64, 64, 64);
+	section-color: rgb(0, 255, 0);
+	
+}</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+	color: red;
+}</string>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
